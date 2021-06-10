@@ -1,4 +1,4 @@
-# Configuração de servidores em nuvem utilizando Apache (compilação do source), nginx e Node.js. 
+# Configuração de servidores em nuvem utilizando Apache (compilação do source), nginx e Node.js. (19/03/2021 a 30/03/2021)
 Nesse primeiro contato com servidores, configurei um servidor Ubuntu 20.04 utilizando **Apache 2**,
 compilado a partir da fonte para servir páginas estáticas, instalei um certificado auto-assinado utilizando **OpenSSL**, para acesso via **https**, configurei e transferi arquivos via **FTP (vsftpd)** 
 pelo terminal;
