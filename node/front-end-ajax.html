@@ -1,0 +1,32 @@
+<!-- Página exemplo fazendo requisição ajax ao servidor -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <div id="demo">
+    <h2>Digite o ID do produto e clique em "Consultar"</h2>
+    <input id="id" type="text"></input>
+    <button type="button" onclick="loadDoc()">Consultar</button>
+  </div>
+
+  <script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          var id = document.getElementById("id").innerHTML;
+          var endereco = "http://149.28.50.127:8080/produto/" + "id"
+          document.getElementById("demo").innerHTML =
+            this.responseText;
+        }
+      };
+      xhttp.open("GET", endereco, true);
+      xhttp.send();
+    }
+  </script>
+
+</body>
+
+</html>
