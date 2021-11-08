@@ -4,7 +4,7 @@ const app = express();
 
 const produto = [
   {
-    "id": 1,
+    "id": 1, 
     "nome": "Produto A"
   },
   {
